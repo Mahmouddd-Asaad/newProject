@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Cairo&family=Kanit:wght@300&family=Roboto+Slab:wght@300&display=swap');
+
+body{
+    font-family: 'Kanit', sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    color: #222;
+}
+.main {
+    width: 1170px;
+    margin: 80px auto;
+}
+
+.selection-title {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.selection-title h1 {
+    text-transform: capitalize;
+    font-size: 35px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+}
+
+.selection-title h1:before{
+    content: '';
+    position: absolute;
+    width: 60px;
+    height:3px;
+    left: 50%;
+    bottom: 0;
+    background-color: #005734;
+    transform: translateX(-50%);
+}
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.menu-column{
+    width: 31%;
+}
+
+.menu-column h4{
+    text-transform: capitalize;
+    font-size: 24px;
+    font-family: 500;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.menu-column h4::before{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height:3px;
+    bottom: 0;
+    background-color: #005734;
+}
+
+.single-menu{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.single-menu img{
+    border-radius: 100%;
+    max-width: 110px;
+    border: 1px dashed #005734;
+    padding: 3px;
+    margin-right: 20px;
+    transition: .999s;
+}
+
+.single-menu:hover img{
+    transform: rotate(40deg);
+}
+
+.single-menu .menu-content h3{
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 500;
+    border-bottom: 1px solid #222;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.single-menu .menu-content h3 span{
+    color: tomato;
+    text-align: right;
+    font-family: 600;
+    padding-left: 100px;
+    font-style: italic;
+}
